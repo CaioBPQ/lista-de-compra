@@ -1,0 +1,161 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 400px;
+  width: 100%; 
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 80px 100px; 
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+form input[type="text"],
+form input[type="number"] {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
+form button {
+  padding: 10px;
+  background: #4CAF50; 
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background: #45a049; 
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+li {
+  padding: 10px 15px;
+  background: #eee;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  word-break: break-word; 
+}
+
+li.comprado {
+  text-decoration: line-through;
+  color: gray;
+  background: #e0e0e0;
+}
+
+li .item-text {
+  flex-grow: 1;
+}
+
+li .actions button {
+  margin-left: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #555; 
+  font-size: 18px;
+  padding: 5px;
+}
+li .actions button:hover {
+  color: #000;
+}
+
+.actions-main {
+  display: flex;
+  flex-direction: column; 
+  gap: 10px; 
+  margin-top: 20px;
+}
+
+.actions-main button {
+  padding: 12px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.actions-main button:hover {
+  opacity: 0.9;
+}
+
+.actions-main button:active {
+    transform: scale(0.98);
+}
+
+#btnWhatsApp {
+  background-color: #25D366; 
+  color: white;
+}
+#btnWhatsApp:hover {
+  background-color: #1DAE54;
+}
+
+#btnShareAPI {
+  background-color: #007bff; 
+  color: white;
+}
+#btnShareAPI:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo para o novo botão de Gerar PDF */
+#btnGerarPDF {
+  background-color: #dc3545; /* Vermelho, cor comum para PDFs */
+  color: white;
+}
+#btnGerarPDF:hover {
+  background-color: #c82333; /* Vermelho mais escuro */
+}
+
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px; 
+  }
+  .container {
+    padding: 15px; 
+  }
+  form {
+    grid-template-columns: 1fr; 
+    gap: 10px;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+}
